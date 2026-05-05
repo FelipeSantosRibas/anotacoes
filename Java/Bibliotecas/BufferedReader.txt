@@ -1,9 +1,0 @@
-import java.io.BufferedReader; // Importa a biblioteca BufferedReader
-
---------------------------------------------------------
-
-BufferedReader reader = new BufferedReader(FileReader); // Cria um BufferedReader
-
-this.read(); // retorna um valor int com o valor em byte code do caractere, retorna -1 se não houver mais data para ser lida (use (char) para transformar de int para char)
-this.readLine(); // retorna uma string com a próxima linha inteira, retorna null se não houver mais linhas
-this.close(); // fecha o FileReader

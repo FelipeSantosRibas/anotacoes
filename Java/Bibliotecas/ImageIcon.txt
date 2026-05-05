@@ -1,6 +1,0 @@
-import javax.swing.ImageIcon; // Importa a biblioteca ImageIcon
-
-------------------------------------------------------------------
-
-ImageIcon imagem = new ImageIcon(this.getClass().getResource("")); // Cria uma ImageIcon
-imagem.getImage(); // Retorna a imagem

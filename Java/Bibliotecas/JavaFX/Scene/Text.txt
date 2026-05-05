@@ -1,2 +1,0 @@
-import javafx.scene.text.Text;
-Text text = new Text("Texto"); //Adiciona Texto

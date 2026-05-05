@@ -1,5 +1,0 @@
-ZonedDateTime zonedDateTime;
-
-ZonedDateTime.now();
-
-this.withZoneSameInstant(ZoneId.of("America/New_York"));

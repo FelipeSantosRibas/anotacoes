@@ -1,6 +1,0 @@
-this.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho máximo para ser o maior possível
-this.setMinSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho minimo para ser o maior possível
-this.setPrefSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho preferido para ser o maior possível
-
-this.setFont(Font.font("Tahoma", FontWeight.NORMAL, 20)); // Define a fonte de um texto
-this.setText("texto"); // Define o texto de um node

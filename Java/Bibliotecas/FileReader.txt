@@ -1,8 +1,0 @@
-import java.io.FileReader; // Importa a biblioteca FileReader
-
---------------------------------------------------------
-
-FileReader reader = new FileReader("arquivo.txt"); // Cria um FileReader
-
-this.read(); // retorna um valor int com o valor em byte code do caractere, retorna -1 se não houver mais data para ser lida (use (char) para transformar de int para char)
-this.close(); // fecha o FileReader

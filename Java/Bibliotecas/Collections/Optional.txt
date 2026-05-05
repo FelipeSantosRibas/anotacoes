@@ -1,8 +1,0 @@
-Optinal<T>
-
-.isPresent() // Tem conteúdo
-.isEmpty() // Está vazia
-.get() // Retorna o conteúdo
-.orElse()
-
-OptionalDouble.of(Double.valueOf(valorDouble)).orElse(0)

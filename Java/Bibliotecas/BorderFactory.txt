@@ -1,6 +1,0 @@
-import javax.swing.border.Border; // Importa a biblioteca Border
-import javax.swing.BorderFactory; // Importa a biblioteca BorderFactory
-
------------------------------------------------------------------
-
-Border border = BorderFactory.createLineBorder(cor,largura); // Cria uma borda de linha com BorderFactory

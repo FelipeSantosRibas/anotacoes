@@ -1,2 +1,0 @@
-Um método finalize() é chamado automáticamente pelo coletor de lixo quando não há mais referências a um determinado objeto.
-É possível sobrescrever o método finalize() para modificar oque acontece antes da coleta do lixo.
