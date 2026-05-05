@@ -1,0 +1,12 @@
+import java.io.FileWriter; // Importa a classe FileWriter
+
+------------------------------------------------------
+
+FileWriter writer = new FileWriter("arquivo.txt"); // Cria um novo FileWriter
+FileWriter writer = new FileWriter("arquivo.txt",true); // Cria um novo FileWriter que automaticamente adiciona linhas, mesmo com write()
+
+this.write(""); // Reescreve o arquivo
+this.append(""); // Adiciona texto no arquivo
+this.close(""); // Fecha o FileWriter
+this.newLine(""); // Pula uma linha, funciona em todos os sistemas operacionais
+this.flush(""); // Garante que todas as informações sejam enviadas e fecha o FileWriter

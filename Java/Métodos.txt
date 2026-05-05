@@ -1,0 +1,19 @@
+// Criação de método
+
+<modificadores> <tipo> nomeDoMétodo(<tipo> parâmetro){
+	<instrução>;
+	return <retorno>;
+}
+
+------------------------------------------------------------------
+
+// Métodos como parâmetros variáveis
+
+<modificadores> <tipo> nomeDoMétodo(<tipo> ... parâmetro){
+
+	parâmetro.length; // consegue a quantidade de parâmetros usados
+	parâmetro[i]; // consegue um parâmetro em específico por seu index
+
+	<instrução>;
+	return <retorno>;
+}

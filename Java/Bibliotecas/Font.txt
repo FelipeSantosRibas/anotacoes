@@ -1,0 +1,5 @@
+import java.awt.Font; // Importa a biblioteca Font
+
+--------------------------------------------------------
+
+Font fonte = new Font("Nome",Font.ESTILO,tamanho); // Cria uma nova fonte

@@ -1,0 +1,62 @@
+Classes comuns
+
+// Criar uma classe
+<modificador> class NomeDaClasse{}
+
+// Criar um método
+<modificadores> <tipo> NomeDoMétodo(){
+	<instrução>;
+}
+
+// Método construtor
+<modificadores> NomeDaClasse(<tipo> parâmetro){
+	this.variável = parâmetro;
+}
+
+// Método Getter e Setter
+<modificadores> getX(){
+	return this.variável;
+}
+<modificadores> setX(<tipo> parâmetro){
+	this.variável = parâmetro;
+}
+
+// Herdando de uma classe
+extends Classe // Após o nome da classe filha
+	
+---------------------------------------------------------------
+
+// Método driver
+public static void main(String[] args){
+	<instrução>;
+}
+
+---------------------------------------------------------------
+
+Enum
+// O enum é uma classe que pré-define objetos constantes, assim como qualquer classe, pode conter getters, setters e construtores.
+
+// Criar uma classe enum
+<modificador> enum NomeDoEnum{}
+
+// Pré definindo objetos do enum
+OBJETO (<parâmetros>)
+
+
+
+NomeDoEnum.values() // Cria um array com todos os valores do enum
+
+---------------------------------------------------------------
+
+Interface
+// Uma interface é como uma classe, porém que permite herrança múltipla. Assim como uma classe abstrata, ela não implementa seus próprios métodos
+
+// Criar uma interface
+<modificador> inteface NomeDaInterface{}
+
+// Criar um método sem implementação
+<modificadores> <tipo> NomeDoMétodo(){}
+
+
+// Herdando de uma interface
+implements Interace // Após o nome da classe

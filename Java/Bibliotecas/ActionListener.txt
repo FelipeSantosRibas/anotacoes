@@ -1,0 +1,10 @@
+import java.awt.event.ActionListener; // Importa a biblioteca ActionListener
+
+-----------------------------------------------------------------
+
+public class MyClass implements ActionListener{} // Torna a classe implementadora de Action Listener
+
+-----------------------------------------------------------------
+
+@Override
+public void actionPerformed(ActionEvent e){} // Executa uma ação quando um evento é acionado

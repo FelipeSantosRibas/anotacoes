@@ -1,0 +1,44 @@
+No terminal, execute esse comando para adicionar um arquivo de documentação do projeto:
+javadoc -encoding UTF-8 -docencoding ISO-8859-1  -d ../docs  src/*.java
+
+
+Para inserir uma documentação ao seu projeto, escreva dentro de:
+
+/**
+*
+*/
+
+
+Tags:
+
+@autor		Autor / Criador
+@deprecated	Identifica classes ou métodos obsoletos.
+@link	Possibilita a definição de um link para um outro documento local ou remoto através de um URL.
+@see	Possibilita a definição referências de classes ou métodos, que podem ser consultadas para melhor compreender idéia daquilo que está sendo comentada.
+@version	Versão do recurso disponibilizado
+@since		Versão / Data de início da disponibilização do recurso
+@param		Descrição dos parâmetros dos métodos criados
+@return		Definição do tipo de retorno de um método
+@throws		Se o método lança alguma exceção
+
+
+Exemplo:
+
+/**
+* <h1>Classe</h1>
+* Essa classe realiza ações como...
+* <p>
+* <b>Note:</b> Leia atentamente a documentação desta classes
+* para desfrutar dos recursos oferecidos pelo autor
+*
+* @author  Autor
+* @version 1.0
+* @since   00/00/0000
+*/
+
+/**
+* Este método é utilizado para...
+* @param parametro1 este é o primeiro parâmetro do método
+* @param parametro2 este é o segundo parâmetro do método
+* @return int - Resultado dos parâmetros.
+*/

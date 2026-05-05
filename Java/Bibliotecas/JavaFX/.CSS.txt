@@ -1,0 +1,46 @@
+// Este link possui um guia de refência para CSS em JavaFX:
+https://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html#typeeffect
+
+// Adiciona o estilo de CSS à scene, (relativo à pasta da classe)
+scene.getStylesheets().add(
+Main.class.getResource("style.css").toExternalForm());
+
+// Define um ID que pode ser personalizado  (use # invés de . no css para modificá-lo)
+.setId("id"); 
+
+-------------------------------------------------------------------
+
+// Classes
+
+.root{} // Afeta o Layout principal da scene
+
+.label{} // Afeta todos os Labels
+
+.button{} // Afeta todos os Buttons
+
+.class:hover{} // Afeta oque acontece quando o mouse passa por cima
+
+.class:pressed{} // Afeta oque acontece quando o mouse clica em cima
+
+-------------------------------------------------------------------
+
+// Métodos:
+
+/* comentário */
+
+-fx-background-image: url("background.jpg"); // Adiciona uma imagem (relativo à pasta da classe)
+-fx-background-color: #2A5058; // Muda a cor de fundo de um node
+-fx-fill: FIREBRICK; // Muda a cor do node
+
+-fx-font-size: 12px; // Muda o tamanho da fontex 
+-fx-font-family: "Arial Black"; // Muda a fonte o texto
+-fx-font-weight: bold; // Muda o formato da fonte
+-fx-text-fill: #333333; // Muda a cor do texto dentro de um node (para um objeto Text, use -fx-fill)
+
+-fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); // Define o efeito dropshadow
+-fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 ); // Define o efeito innershadow
+
+
+// Outros:
+
+linear-gradient(#61a2b1, #2A5058) // Define um gradiente como uma cor

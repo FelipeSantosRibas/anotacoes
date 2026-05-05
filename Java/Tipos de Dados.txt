@@ -1,0 +1,27 @@
+boolean: true ou false (pode conter uma expressão com operadores relacionais).
+byte: números inteiros de -128 a 127.
+short: números inteiros de -32768 a 32767.
+int: números inteiro de -2 milhões a 2 milhões.
+long: números inteiros de -9 quintilhões a 9 quintilhões (deve terminar com L).
+float: números decimais de 1.4023x10-45 a 3.4028x10+38 (deve terminar com F) .
+double: números decimais de 4.9406x10-324 a 1.7977x10+308
+char: um caractere Unicode de 16 bits (deve estar entre ").
+String*: armazena uma string (deve estar entre "").
+
+*: (Tecnicamente é um classe).
+
+Use (int),(double),(float) para explícitamente converter uma variável para outro tipo.
+
+-----------------------------------------------------
+
+Usando Generics:
+// A generics permite que você escreva um mesmo código que aceita diversos tipos de dados
+
+Exemplo de Generics:
+
+public class Class<T>{
+	private T t;
+
+	public void set(T t) {this.t = t}
+	public T get() {return t;}
+}

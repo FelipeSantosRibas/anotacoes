@@ -1,0 +1,12 @@
+Um JPanel é um componente de GUI que funciona como um container que contêm componentes.
+
+------------------------------------------------------------------
+
+import javax.swing.JPanel; // Importa a biblioteca JPanel
+
+------------------------------------------------------------------
+
+JPanel panel = new JPanel(); // Cria um JPanel
+panel.setBounds(x,y,width,height); // Define o tamanho e a posição do JPanel
+panel.setBackground(Color.red); // Define a cor de fundo do JPanel
+this.setLayout(null); // Define o layout do JPanel, pode ser null, new BorderLayout()

@@ -1,0 +1,2 @@
+System.out.println(): imprime uma saída no terminal, como uma string ou uma operação, e pula uma linha.
+System.out.print(): imprime uma saída no terminal, como uma string ou uma operação, não pula linha.

@@ -1,0 +1,26 @@
+import java.util.ArrayList; // importa a classe Array List
+
+----------------------------------------
+
+Um ArrayList é um Array de tamanho variável.
+Elementos podem ser adicionados e removidos após a fase de compilação.
+Armazena tipos de dados de referência.
+* Ao criar um objeto da classe ArrayList, é recomendável colocar numa variável do tipo List
+
+----------------------------------------
+
+ArrayList<tipo> nome = new ArrayList<tipo>() // Cria um array list (use classes wrapper)
+
+this.add(); // Adiciona um elemento a uma lista
+this.addAll(Arrays.asList(array)); // Adiciona todos os elementos de um array no ArrayList (importe a classe Arrays!!!)
+this.addAll(Arrays.asList(1, 2, 3, 4)); // Adiciona todos os elementos ao ArrayList (importe a classe Arrays!!!)
+this.replaceAll();
+this.set(index, element); // Adiciona um elemento ao ArrayList no index escrito
+this.remove(index); // Remove o elemento do ArrayList no index escrito
+this.clear(); // Remove todos os elementos do ArrayList
+this.get(index); // Retorna o elemento do ArrayList no index escrito
+this.size(); // Retorna o tamanho do ArrayList
+this.contains(elemento); // Retorna true se o Arraylist contém determinado elemento
+this.forEach(item -> ação); // Realiza a mesma ação para cada elemento do ArrayList (importe a classe List!!!)
+* this.sort(Comparator.comparing(elemento::getter); // Ordena todos os elementos do ArrayList (importe a classe Comparator!!!)
+* Collections.sort(this); // Ordena todos os elementos do ArrayList (precisa implementar Comparable<>)(importe a classe Collections!!!)

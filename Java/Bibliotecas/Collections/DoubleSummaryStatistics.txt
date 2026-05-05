@@ -1,0 +1,7 @@
+Collectors.summarizingDouble(Class::getter)
+
+this.getAverage()
+this.getMin()
+this.getMax()
+this.getSum()
+this.getCount()

@@ -1,0 +1,40 @@
+// Label:
+import javafx.scene.control.Label;
+
+Label label = new Label("Texto"); // Cria um label
+
+-------------------------------------------------------------------
+
+// TextField:
+import javafx.scene.control.TextField;
+
+TextField textField = new TextField(); // Cria um TextField
+
+-------------------------------------------------------------------
+
+// TextField:
+import javafx.scene.control.PasswordField;
+
+PasswordField passwordField = new PasswordField(); // Cria um PasswordField
+.setPromptText(""); // Define o texto de "dica"
+
+-------------------------------------------------------------------
+
+// Button:
+
+Button btn = new Button("texto"); // Cria um botão
+btn.setOnAction(new EventHandler<ActionEvent>() { // Define a ação ao pressionar o botão
+      @Override
+      public void handle(ActionEvent event) {
+            ação;
+      }
+});
+
+-------------------------------------------------------------------
+
+// Geral:
+
+this.setText("texto"); // Define o texto de um node
+this.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho máximo para ser o maior possível
+this.setMinSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho minimo para ser o maior possível
+this.setPrefSize(Double.MAX_VALUE, Double.MAX_VALUE); // Define o tamanho preferido para ser o maior possível
