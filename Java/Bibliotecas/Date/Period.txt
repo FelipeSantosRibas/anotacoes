@@ -1,0 +1,3 @@
+Period period = Period.between(data1, data2);
+
+period.getDays(); // Retorna APENAS os dias da diferença

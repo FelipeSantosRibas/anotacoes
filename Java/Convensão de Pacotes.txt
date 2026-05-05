@@ -1,0 +1,8 @@
+src.(com/gov/org).(empresa).(model/repository/service/controller/view/util)
+
+View: Possuem interação com a interface gráfica.
+Controller: Disponibilizam recursos da aplicação para outras via HTTP.
+Model: Representem a estrutura da aplicação, como Cliente, Pedido, NotaFiscal.
+Service: Contém regras de negócio e validação ou verificação do sistema.
+Repository: Contém alguma integração com banco de dados.
+Util: Contém recursos comuns à toda aplicação.

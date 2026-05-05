@@ -1,0 +1,4 @@
+import java.awt.Color; // Importa a biblioteca Color
+
+Color corDeFundo = new Color(); // Cria uma nova cor
+Color.cor; // Retorna uma cor predefinida

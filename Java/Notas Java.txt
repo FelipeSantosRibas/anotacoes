@@ -1,0 +1,32 @@
+	Um projeto em java é separado por Classes, dentro de pacotes, dentro da pasta de pacotes, e por bibliotecas, como o JDK.
+	Todo projeto em java deve conter uma classe driver, que contém o método main para rodar o programa.
+
+
+
+Tipos de variáveis/dados:
+
+- boolean: true ou false.
+- byte: números inteiros de -128 a 127.
+- short: números inteiros de -32768 a 32767.
+- int: números inteiro de -2 milhões a 2 milhões.
+- long: números inteiros de -9 quintilhões a 9 quintilhões.
+- float: números decimais de 1.4023x10-45 a 3.4028x10+38 (é muita coisa).
+- double: números decimais de 4.9406x10-324 a 1.7977x10+308 (mais coisa ainda).
+- char: um caractere Unicode de 16 bits.
+- String*: armazena uma string.
+
+*: (Tecnicamente é um objeto).
+
+	Use (int),(double),(float) para explícitamente converter uma variável para outro tipo.
+
+
+
+public static void main(String[] args) {} // Declarar o método main
+
+<permissão> class ClassName{} // Criar uma classe
+
+Lembrar de separar em outros blocos de notas
+Lembrar de separar em outros blocos de notas
+Lembrar de separar em outros blocos de notas
+Lembrar de separar em outros blocos de notas
+Lembrar de separar em outros blocos de notas

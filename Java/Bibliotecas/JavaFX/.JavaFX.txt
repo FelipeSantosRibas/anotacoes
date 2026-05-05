@@ -1,0 +1,80 @@
+// Veja esse link para configurar o JavaFX na sua IDE: https://openjfx.io/openjfx-docs/
+// Esse vídeo também ajuda: https://www.youtube.com/watch?v=Zf0Ebw3TULE
+
+/* Se você fez tudo isso:
+- Importe a Biblioteca JavaFX
+- Desmarque "Compile on Save"
+- Adicione esse argumento em "run>VM Options":
+--module-path "\path\to\javafx-sdk-23.0.1\lib" --add-modules javafx.controls,javafx.fxml
+(NÃO SE ESQUEÇA DE TROCAR O CAMINHO A PASTA LIB DO JAVAFX SDK NO ARGUMENTO)
+*/
+
+----------------------------------------------------------------
+// Esse artigo ensina todo o necessário para ingressar no JavaFX: https://docs.oracle.com/javase/8/javase-clienttechnologies.htm
+
+Fundamentos:
+
+- Cada elemento em uma cena é chamado de node.
+- Um stage é uma janela.
+- Uma scene é um container onde fica todos os nodes.
+- Um layouts é um container que guarda nodes para melhor organização.
+- Uma aplicação JavaFX segue a seguinte hierarquia: Stages>Scene>Layout>Nodes.
+
+----------------------------------------------------------------
+
+// Aqui está toda a documentação da API do JavaFX: https://openjfx.io/javadoc/23/
+
+APIs:
+
+ - javafx.scene permite a criação de nodes (formatos, imagens, mídia, web browser embutido, texto, controles de UI, charts, grupos e containers), states (transformações de nodes, efeitos visuais, e etc) e efeitos (objetos simples que mudam a aparência dos nodes).
+ - javafx.scene.media permite a implantação de mídias audiovisuais.
+ - javafx.scene.control permite a criação de elementos de UI como texto, check boxes, botões, scroll bars, indicadores de progresso e etc.
+ - javafx.scene.layout permite o uso de Layout containers e panes para arranjos flexíveis e dinâmicos de controles de UI a partir de diferentes layouts como BorderPane.
+ - javafx.scene.tranform permite transformar os nodes de uma cena usando as classes: translate, scale, shear, rotate e affine.
+ - javafx.scene.effect: permite adicionar efeitos visuais com o uso de classes como: Drop Shadow, Reflection e Lighting.
+
+----------------------------------------------------------------
+
+Contruindo um projeto JavaFX: 
+
+
+// Defina a classe Main para extender a classe Application:
+import javafx.application.Application;
+public class Main extends Application{
+
+
+// O método start() é o ponto de entrada principal para todas as aplicações JavaFX, e nele é declarado o stage principal:
+import javafx.stage.Stage;
+@Override
+public void start(Stage stage) {}
+
+
+// Adicione método launch(args) ao método main:
+public static void main(String[] args) {
+    launch(args);
+}
+
+
+// Antes de criar uma scene, defina um layout para scene, exemplo:
+import javafx.scene.layout.StackPane;
+StackPane layout = new StackPane();
+
+
+// Crie uma scene:
+import javafx.scene.Scene;
+Scene scene = new Scene(layout, 300, 250);
+primaryStage.setScene(scene);
+
+
+// Adicione nodes ao layout, por exemplo:
+layout.getChildren().add(btn);
+
+
+// Use o comando show() para mostrar todoso conteúdo em um stage:
+primaryStage.show();
+
+
+
+
+
+

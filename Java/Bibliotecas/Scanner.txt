@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+
+Scanner in = new Scanner(System.in); // Cria um scanner para ler entradas do console
+Scanner scan = new Scanner(file); // Cria um scanner para ler entradas de um arquivo
+
+
+useLocale(Locale.US): Define a convensão utilizada. // Precisa importar a classe java.util.Locale;
+next(): Lê a próxima palavra, retorna uma String.
+nextLine(): Lê a próxima linha, retorna uma String.
+nextInt(): Lê o próximo número, retorna um valor int.
+nextDouble(): Lê o próximo número, retorna um valor double.
+hasNext(): Verifica se o scanner tiver outra entrada, retorna um valor int.
+close(): Fecha o scanner.

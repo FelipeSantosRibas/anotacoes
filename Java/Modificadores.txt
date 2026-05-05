@@ -1,0 +1,13 @@
+Modificadores de acesso:
+
+public: Pode ser acessado por qualquer classe.
+protected: Pode ser acessado apenas pela própria classe e suas subclasses.
+private: Pode ser acessado apenas pela própria classe.
+
+
+Outros modificadores:
+
+void: Não retorna um valor.
+static: Atributos e métodos pertencem a classe, invés do objeto.
+abstract: Para uma classe, significa que ela não pode ser instânciada, para um método, significa que ele não tem implementação.
+final: Não pode ser alterado.
