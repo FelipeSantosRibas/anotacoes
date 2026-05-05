@@ -1,0 +1,254 @@
+*************** Instalando o GIT
+> Fazer a instalação do GIT na sua máquina usando o seguinte link
+https://git-scm.com/downloads
+>ou em linux os comandos do link
+https://git-scm.com/downloads/linux
+
+**************** Selecionando o diretório do projeto
+> O git só aceita comandos BASH (terminal Linux).
+> Selecione o diretório local onde será armazenado o projeto
+cd diretorio
+ls para listar
+
+**************** configurações básicas do git
+> git -> Exibe todos os comandos do GIT.
+git status
+git config --global user.name "Hildeson Sousa"
+git config --global user.email "hildesonsousa@gmail.com"
+git config --global --list
+git config --list
+
+************** iniciando o GIT
+>Ápos escolher o diretório que irá armazenar o seu projeto, crie alguns arquivos:
+touch index.html style.css script.js processa.php
+>Inicie o GIT no repositório local:
+git init
+>para iniciar o git, será criado a estrutura necessária para versionar o seu código.
+ls .git\
+> para a estrutura de pasta do git no seu projeto.
+git status
+> para verificar status da inicialização do GIT.
+
+************* CRIANDO E ADICIONANDO ARQUIVOS AO PROJETO
+touch index.html style.css script.js
+>Cria o arquivos para o projeto.
+git add index.html
+> Para indexar o arquivo index.html ao repositorio GIT.
+git status
+> Verifica os arquivos adicionados ao repositorio GIT.
+git add . 
+> Para adicionar todos os arquivos do diretório atual para o repositorio GIT, ou seja, para STAGING AREA.
+touch processa.php conexao.php
+> Crie mais dois arquivos
+git add *.php
+> Adiciona ao Stage (Palco) todos os arquivos com a extenção .php
+> Abra seu arquivo index.html e o altere
+git status
+> verique que existem duas versões do arquivo index.html, uma já no stage e o outra que acabou de ser alterado no working directory.
+git reset index.html
+> para retirar o arquivo do stage, tira a mudança do stage, mas não altera o arquivo no working directory.
+> Volte no arquivo index.html e o altere novamente
+git restore index.html
+> Volta o arquivo para a versão anterior que estava no stage
+git status
+> Explicar melhor o git status
+> COMMIT, BRANCH, ARQUIVOS NÃO RASTREADOS E ALTERAÇÕES A SEREM CONFIRMADAS.
+git add index.html
+> Adiciona novamente o arquivo index.html ao stage.
+git diff
+> mostra a diferença do arquivo, em relação o que foi alterado.
+> este comando é utilizado quando temos poucas mudanças no código em um ou dois arquivos. Se houver várias mudanças, o terminal pode se tornar confuso para interpletação.
+git diff index.html
+> Mostra as mudanças apenas no arquivo index.html
+> Altere o arquivo index.html, exclua e adicione elementos e verifique novamente o comando diff
+git diff index.html
+
+************** "Comitando" Realizando o COMMIT
+git commit -m "Primeiro Commit"
+> Realiza o primeiro COMMIT, -m adiciona uma mensagem ao COMMIT para facilitar a transição entre as versões do arquivo.
+git status
+> veja que working directory está vázio, ou seja, os arquivos foram para GIT REPOSITORY e foi criada um versão.
+> Modifique o arquivo index.
+> Para simplificar o processo de adicionar um arquivo ao Stage e depois realizar o Commit dele, podemos usar o comando, a seguir:
+git commit -a -m "Commit sem Stage"
+> Cuidado este comando irá "comitar" todo o projeto
+> Altere o arquivo index.html, em algumas situações queremos realizar pequenas mudanças no código, e atualizar o último commit se a necessidade de criar um novo.
+git add .
+git commit --amend -m "Atualização do código"
+> Esse comando só vale para o ultimo commit
+> Altere novamente o arquivo index.html
+git add .
+git diff --staged
+> verifica a diferença entre o arquivo já "comitado" com o arquivo do Stage.
+> Dicas de mensagens para Commit, não usar palavras únicas, usar algo que faça sentido com o que foi alterado
+git log
+> Para verificar os commit realizados, explicar que cada commit tem um Hash, Author e Data.
+git log -3
+> Exibi apenas os ultimos três commit
+git log --online
+> Exibi de uma forma mais compacta os commits
+git log --online -3
+git log --author="Hildeson Sousa"
+> Exibi os commits do autor especifico
+git log --before="YYYY-MM-DD"
+> Exibi os commits por data
+git log --data/
+> Exibi os commits por pasta
+git shortlog
+> Exibi informações de commits, mais curtas.
+git shortlog -sn
+> Exibi quantidade de commits, por autor.
+
+***************** Facilitar a visualição de commit e branch de forma visual no vscode
+> Abra o VSCODE e instale a extensão Git Graph
+
+
+***************** Trabalhando com Branches
+> Crie ramificações do seu projeto, para teste, resoluções bugs, implatação de novas funcionalidades, etc, sem alterar a versão estavel(main/master) do seu projeto.
+git branch
+> Mostra a branch em que você está.
+git branch dev
+> Cria uma branch - nomes comuns feature, bugfix(correção de erros), fix, dev.
+git branch -d dev
+> Exclui a branch criada
+git checkout -b dev
+> Tambem cria uma bransh e vai para branch criada, o comando checkout é usado para navegar entre as branch
+git branch
+> Veja que agora temos, mais de uma branch
+git branch -m develop
+> Renomeia a branch em que você está
+git log main
+> verifica o log da branch main
+git log develop
+> verifica o log da branch develop
+>altere o o arquivo index.html
+git commit -a -m "Alterações na nova branch"
+> Adiciona o arquivo ao Stage e "comita" já na nova brach "develop"
+git diff develop main
+> mostra a diferença entre as branchs
+
+
+************* Conceito repositório remoto
+> Explique o que é um reositório remoto e mostre as opções:
+GitHub, GitLab, Bitbucket, Gitness, Azure Repository
+> Crie uma conta no GitHub
+> Apenas projeto Opensource - Gratuitos
+> Criar repositório
+> Usar como portifólio
+> Fork
+> Pesquisar outros códigos, contribuir para alguma comunidade.
+
+************* Usando um repositório remoto
+> Após ter criado o resotório no Github
+> Acesse o repositório, na parte inferior do repositório você irá encontrar um comando semelhante ao abaixo:
+git remote add origin https://github.com/hildesonsousa/aulasgit.git
+git remote -v
+> para verificar a origem do repositório remoto
+git push -u origin main
+> envia o repositorio git para o repositorio remoto, apenas da branch main
+git remote remove origin
+> remove o repositorio git do repositorio remoto
+> AGORA VAMOS simular mudanças externas a sua máquina, no github, adicione manualmente novos arquivos README.md, e outro codigos.
+git fetch
+> GIT PULL - traz as informações do diretório remoto para o local.
+> GIT PUSH - envia as informações do diretório local para o remoto.
+> mostra as mudanças entre os repositorios local e remoto
+git pull origin main
+> sincroniza o repositorio local com as mudanças feitas no repositório remoto.
+> Em trabalhos colaborativos, Sempre faça o git pull antes de de começar a trabalhar e novamente antes de fazer o git push, Para garantir que vocês esteja sincronizado com as ultimas features do repositorio.
+git remote show origin
+> exibi a url do repositório remoto e outras informações relevantes.
+git remote set-url origin https://github.com/hildesonsousa/aula.git
+> Altera a url do projeto, caso necessario.
+code .
+> Abre o VSCODE
+
+************** Clonando um repositório
+> Explicar o conceito de clonar repositório.
+> Os alunos iram clonar o repositório de seus colegas.
+Observação: escolha o diretório local primeiro
+git clone https://github.com/hildesonsousa/aulasgit.git CloneDoProjeto
+
+
+*************** MERGE mesclado 
+git merge develop
+> mescla a branch atual com a main, exibi se há conflitos
+> caso exista conflitos, devem ser solucionados no editor(IDE) manualmente, pelos desenvolvedores, e depois novamente realizar merge
+git merge --abort
+> aborta o merge caso haja conflito entre as branch
+> Faças as alterações e execute o comando, a seguir, para continuar o merge:
+git merge --continue
+
+**************** Usando REBASE
+git checkout -b newfeature
+> cria uma nova branch para explicar o conceito de REBASE
+> Altere o arquivo index.html do projeto, adicione um botão chamado melhorias
+git add .
+git commit -m "Novo Botão"
+> Altere a cor do botão
+git add .
+git commit -m "Cor Botão"
+
+> volte para o branch main
+git checkout main
+> altere o arquivo script.js coloque uma função simples
+git add.
+git commit -m "Nova função"
+
+> Vá para o VSCODE e visualize com a extenção GIT Graph a nova ramificação do projeto.
+git checkout newfeature
+> vai para o branch newfeature
+git rebase main
+> Atualiza a o branch main com as alterações do branch newfeature
+> Vá para o VSCODE e visualize com a extenção GIT Graph a nova ramificação do projeto.
+git checkout main
+> Volta para o branch main
+git rebase newfeature
+> Atualiza a main com a newfeature
+> Caso queira realizar o REBASE e levar apenas alguns commits, use o comando abaixo:
+git rebase -i HEAD~3
+> Realiza o REBASE com os ultimos 3 commits
+> Tenha cuidado com o REBASE. Redobre a atenção ao usar REBASE em projetos compartilhados ou públicos, pois ele altera o histórico dos commits.
+
+******************** Utilizando TAGs
+git tag v2025
+> cria uma tag leve e marca o lançamento da versão 2025 da aplicação
+git tag
+> exibi as tags criadas
+git tag -d v2025
+> Deleta a tag criada
+git tag -a v2025 -m "Versão 2025, estavél"
+> Cria uma tag anotada
+git show v2025
+> exibi as informações da tag
+git push origin v2025
+> Envia a a TAG para o repositório remoto
+git push origin --delete v2025
+> Deleta a tag do repositório remoto 
+
+
+********************* Revertendo erros
+> Altere o arquivo index.html
+git checkout -- index.html
+> Restaura o arquivo ao ponto do ultimo commit
+> Altere novamente o arquivo index.html
+git add.
+git status
+> Adiciona o arquivo ao STAGE e exibi as informações
+git reset --hard HEAD
+> Reverte as mundaças locais do STAGE
+> Altere o arquivo index.html, coloque erros
+git commit -a -m "Achei que tava bom"
+> Criou um commmit
+git reset --hard HEAD~1
+> Desfaz o último commit feito
+> > Altere o arquivo index.html, coloque hr
+git commit -a -m "Linha na Horizontal"
+> Cria um commit para a alteração
+git revert ef312cdc0fd092b2e557363af61e7cda2033ab76
+> Rever para commit pelo hash gerado, gerando um novo commit após a reversão
+
+
+
+
+

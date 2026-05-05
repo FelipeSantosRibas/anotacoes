@@ -1,0 +1,67 @@
+// ---------------------- CONFIGURANDO GIT ----------------------
+
+git status
+git config --global user.name "nome"
+git config --global user.email "email"
+git config --global --list
+git config --list
+git remote add origin repositorio.git (define para qual repositorio git será enviado os arquivos)
+
+// ----------------------- PRINCIPAIS GIT -----------------------
+
+git init   (cria um repositório git local)
+git pull repositorio.git (importa um repositório git)
+git clone repositorio.git nome_da_pasta (importa um repositório git pela primeira vez)
+git clone repositorio.git --branch nome_da_branch --single-branch (importa uma branch de um repositório git)
+git add .   (prepara os arquivos para o git commit)
+git commit -m "mensagem"   (salva uma versão do arquivo)
+git push -u origin main   (envia todas as alterações para o depositório git)
+git pull origin main --allow-unrelated-histories (:wq)
+
+// ---------------------- OUTROS COMANDOS -----------------------
+
+// Interagir com arquivos
+
+touch nome_do_arquivo (Cria uma arquivo no diretório selecionado)
+mkdir nome_da_pasta (Cria uma pasta)
+cd caminho (Navega para outro diretório)
+cat arquivo (Visualiza o conteúdo do arquivo)
+echo conteúdo > arquivo (Altera o conteúdo de um arquivo)
+rm -rf arquivo (Exclui um arquivo)
+
+// Branches
+
+git checkout -b branch (Muda para outra branch)
+git branch -M branch (Define a branch que será usada para importar)
+git merge branch (Mescla uma branch com a branch atual)
+git branch -d branch (Exclui uma branch)
+git config init.defaultBranch (Descobre ou muda a branch padrão)
+git branch -v (Mostra o último commit de cada branch)
+
+// Correções
+
+clear (Limpa a tela)
+git restore arquivo (Recupera o último estado de um arquivo) 
+git reset --soft/mixed/hard hash_do_commit (Retorna para um commit anterior)
+git stash (Arquiva as mudanças realizadas na branch)
+git stash list (Verifica todas mudanças arquivadas da branch)
+git stash pop (Retorna a mudança arquivada e exclui da lista)
+git stash apply (Retorna a mudança arquivada e deixa na lista)
+git commit --amend -m"mensagem" (Corrige a mensagem do último commit)
+
+// Fork
+
+git remote add upstream repositorio.git (Define de qual repositório você fez o fork)
+git pull upstream main (Baixa as alterações da branch main)
+
+// Verificações
+
+git remote -v (Verifica a origem e a upstream definida)
+git log (Visualiza todos os commits)
+git reflog (Visualiza todos os commits e suas alterações)
+
+
+// -------------------------- ATALHOS ---------------------------
+
+Ctrl + L (Limpa a tela)
+Shift + Insert (Ctrl V)
