@@ -1,0 +1,13 @@
+Estrutura:
+margin: tamanho da margem;
+padding: tamanho da margem interna;
+
+Texto:
+color: cor do texto ();
+font-size: tamanho da fonte (ex: 20px, 200%);
+font-style: tipo de fonte (ex: italic);
+font-weight: peso da fonte (ex: normal, bold);
+font-family: fontes do texto (ex: Impact, sans-serif);
+text-align: alinhamento do texto (ex: center, right, justify);
+text-decoration: decoração do texto (ex: none, underline, overline, line-through)
+

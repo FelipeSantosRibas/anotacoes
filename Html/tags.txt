@@ -10,6 +10,8 @@ Dentro do head:
 <!DOCTYPE html> : Declara o tipo de documento
 <title> : Define o título da página
 <meta> : Adiciona informações da página, como author, keywords, description (name, content)
+<link> : Relaciona um arquivo (geralmente uma "stylesheet" css) com o html (rel, href)
+<style> : Adiciona código CSS de maneira interna
 
 
 Containers e semântica:

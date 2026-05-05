@@ -1,0 +1,25 @@
+Use esta tag em HTML para linká-la ao css:
+<link rel="stylesheet" href="arquivo.css">
+
+--------------------------------------------
+
+Sintaxe básica:
+seletor .classe #id{
+	propriedade: valor;
+}
+
+--------------------------------------------
+
+/* Comentário */
+
+--------------------------------------------
+
+!important torna a regra como prioridade
+
+--------------------------------------------
+
+Reset css:
+* {
+    margin: 0;
+    padding: 0;
+}
