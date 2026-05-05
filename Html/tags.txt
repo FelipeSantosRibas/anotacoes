@@ -1,0 +1,79 @@
+<!-- Comentário -->
+
+Bases:
+<html> : Todo o código html fica dentro desta tag 
+<head> : Usada para comunicação entre o site e o servidor, não aparece diretamente como conteúdo no site
+<body> : Inclui o conteúdo do site
+
+
+Dentro do head:
+<!DOCTYPE html> : Declara o tipo de documento
+<title> : Define o título da página
+<meta> : Adiciona informações da página, como author, keywords, description (name, content)
+
+
+Containers e semântica:
+<div> : container em bloco
+<span> : container em linha
+<form> : container de um formulário
+<header> : cabeçalho da página ou de uma seção
+<nav> : área de navegação com links principais do site
+<section> : seção temática do conteúdo
+<article> : conteúdo independente e reutilizável (ex: post, notícia)
+<aside> : conteúdo complementar ou barra lateral
+<footer> : rodapé da página ou de uma seção (informações finais, direitos autorais, contatos)
+
+[       header       ]
+[        nav         ]
+[   section   ][     ]
+|[  article  ]||aside|
+[[  article  ]][     ]
+[       footer       ]
+
+
+Texto:
+<h1> a <h6> : Usado para títulos ou cabeçalhos
+<p> parágrafo
+<b> negrito
+<i> itálico
+<em> ênfase
+<strong> grande importância
+
+
+Estrutura:
+<br> : quebra de linha (gambiarra, evitar)
+<hr> : linha horizontal
+
+
+Listas:
+<ol> : define uma lista ordenada numérica
+<ul> : define uma lista com marcadores (sem ordem)
+<li> : item da lista
+
+<dl> : define uma lista de definições
+<dt> : termo da lista
+<dd> : descrição da lista
+
+
+Tabelas:
+<table> : define uma tabela
+<tr> : linha da tabela
+<th> : célula de cabeçalho da tabela
+<td> : célula da tabela (colspan, rowspan)
+
+
+Conteúdo:
+<a> : anexa links relativos, absolutos ou internos (href)
+<img/> : adiciona uma imagem (src, alt)
+
+
+Formulários:
+<form> : define um formulário (action, method)
+<label> : Define formalmente cada elemento de um formulário, seu atributo for deve conter o id ou name do elemento selecionado (for)
+<input> : caixas de texto de uma única linha (type, name, value)
+<textarea> : caixas para conteúdo multilinha
+<select> : seletor, contendo tags <option> como opções de escolha (name)
+<option> : opções para se escolher dentro de um <select> (value)  
+<button> : disparam ações do formulário, podem ser do tipo submit, reset ou button (type)
+<fieldset> : cria um grupo de elementos dentro de um formulário com um propósito expecífico, usa um <legend>
+<legen> : define formalmente o propósito do <fieldset>
