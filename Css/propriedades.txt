@@ -1,6 +1,18 @@
 Estrutura:
 margin: tamanho da margem;
 padding: tamanho da margem interna;
+width: largura da caixa dos elementos;
+height: altura da caixa dos elementos;
+overflow: controla o excedente (visible, hidden, scroll, auto);
+display: muda o tipo de elemento(block, inline, inline-block, nome);
+position: Tipo de posicionamento do objeto(relative, absolute, fixed, sticky);
+top, left, bottom, right: a distância a partir de qual ponto será calculado a posição;
+z-index: define qual elemento será mostrado na frente;
+
+Decoração:
+background-color: cor de fundo;
+border: controla estilo, largura e cor da borda;
+border-radius: arredondamento dos cantos das bordas;
 
 Texto:
 color: cor do texto ();
