@@ -1,0 +1,17 @@
+dinâmicas:
+hover: quando passamos o mouse em cima do elemento
+active: quando o usuário torna o elemento ativo
+visted: quando um link já foi visitado
+focus: quando um elemento está focado
+
+estruturais:
+first-child: aplicada no primeiro filho de um elemento
+last-child: aplicada no último filho de um elemento
+nth-child(): permite selecionar qualquer elemento de um grupo (ex: nth-child(2n+1))
+not(): permite não selecionar um elemento em específico
+
+de validação:
+checked: para elementos <radio>, <checkbox> ou <option> que estejam ativos
+disabled: elementos desativados
+valid, invalid: para formulários cujos dados de entrada estejam de acordo ou não
+required: para elementos cujo preenchimento é obrigatório

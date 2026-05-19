@@ -1,0 +1,5 @@
+placegolder: seleciona o placeholder de um elemento
+first-line: aplica estilos apenas na primeira linha de um parágrafo
+first-letter: aplica estilos apenas na primeira letra de um parágrafo
+section: seleciona um elemento selecionado com o mouse
+marker: seleciona os marcadores dos itens da lista
