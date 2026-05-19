@@ -5,14 +5,30 @@ width: largura da caixa dos elementos;
 height: altura da caixa dos elementos;
 overflow: controla o excedente (visible, hidden, scroll, auto);
 display: muda o tipo de elemento(block, inline, inline-block, nome);
+
+Posição e transformação:
 position: Tipo de posicionamento do objeto(relative, absolute, fixed, sticky);
 top, left, bottom, right: a distância a partir de qual ponto será calculado a posição;
 z-index: define qual elemento será mostrado na frente;
+transform:translate(x,y), translateX, translateY(): muda a localização do objeto;
+transform:rotate(), rotateX(), rotateY(), rotateZ(): rotaciona o elemento em deg(graus);
+transform:scale(x,y), scaleX(), scaleY(): muda a escala do objeto;
+transform:skew(x,y), skewX(), skewY(): distorce o objeto, ambos parâmetros em deg;
+
+
+animação:
+transition: tempo de animação de uma propriedade (ou all), usando hover ou focus por exemplo(propriedade, segundos);
+animation: define os parâmetros da animação;
+animation-name: adiciona uma animação @keyframes;
+animation-duration: duração da animação @keyframes;
+animation-interation-count: quantidade de repetições da animação @keyframes (pode ser infinite);
+animation-delay: delay da animação @keyframes;
 
 Decoração:
 background-color: cor de fundo;
 border: controla estilo, largura e cor da borda;
 border-radius: arredondamento dos cantos das bordas;
+background-image: linear-gradient, radial-gradient (ex: linear-gradient(to direction/Xdeg, color, color));
 
 Texto:
 color: cor do texto ();
