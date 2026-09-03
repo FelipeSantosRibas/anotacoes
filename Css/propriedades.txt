@@ -4,10 +4,20 @@ padding: tamanho da margem interna;
 width: largura da caixa dos elementos;
 height: altura da caixa dos elementos;
 overflow: controla o excedente (visible, hidden, scroll, auto);
-display: muda o tipo de elemento(block, inline, inline-block, nome);
+display: muda o tipo de elemento(block, inline, inline-block, flex);
+
+Flexbox:
+display: flex; (usado no elemento pai)
+flex-direction: direção dos flex items filhos (row, row-reverse, column, column-reverse);
+flex-wrap: quebra de linha quando o container pai ficar sem espaço (wrap, nowrap, wrap reverse);
+flex-flow: flex-direction e flex-wrap.
+justify-content: alinhamento dos flex items (flex-start, flex-end, center, space-between, space-around, space-evenly)
+align-items: alinhamento horizontal dos itens verticas e vice versa (flex-start, flex-end, center, stretch).
+align-content: só funciona quando tem várias linhas (flex-start, flex-end, center, stretch, space-between, space-around)
+oder: ordem de aparecimento de um flex-item;
 
 Posição e transformação:
-position: Tipo de posicionamento do objeto(relative, absolute, fixed, sticky);
+position: tipo de posicionamento do objeto(relative, absolute, fixed, sticky);
 top, left, bottom, right: a distância a partir de qual ponto será calculado a posição;
 z-index: define qual elemento será mostrado na frente;
 transform:translate(x,y), translateX, translateY(): muda a localização do objeto;
@@ -15,8 +25,7 @@ transform:rotate(), rotateX(), rotateY(), rotateZ(): rotaciona o elemento em deg
 transform:scale(x,y), scaleX(), scaleY(): muda a escala do objeto;
 transform:skew(x,y), skewX(), skewY(): distorce o objeto, ambos parâmetros em deg;
 
-
-animação:
+Animação:
 transition: tempo de animação de uma propriedade (ou all), usando hover ou focus por exemplo(propriedade, segundos);
 animation: define os parâmetros da animação;
 animation-name: adiciona uma animação @keyframes;
