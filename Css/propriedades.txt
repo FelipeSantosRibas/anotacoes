@@ -4,7 +4,7 @@ padding: tamanho da margem interna;
 width: largura da caixa dos elementos;
 height: altura da caixa dos elementos;
 overflow: controla o excedente (visible, hidden, scroll, auto);
-display: muda o tipo de elemento(block, inline, inline-block, flex);
+display: muda o tipo de elemento(block, inline, inline-block, flex, grid);
 
 Flexbox:
 display: flex; (usado no elemento pai)
@@ -15,6 +15,23 @@ justify-content: alinhamento dos flex items (flex-start, flex-end, center, space
 align-items: alinhamento horizontal dos itens verticas e vice versa (flex-start, flex-end, center, stretch).
 align-content: só funciona quando tem várias linhas (flex-start, flex-end, center, stretch, space-between, space-around)
 oder: ordem de aparecimento de um flex-item;
+
+Grid CSS:
+display: grid;
+grid-template-columns: indica os tamanhos das colunas (ex: 300px 100px, 2fr 1fr, repeat(5, 1fr));
+grid-template-rows: indica os tamanhos das linhas (ex: 40px 100px, 3fr 1fr, repeat(12, 1fr)));
+gap: tamanho das lacunas;
+column-gap: lacunas entre as colunas;
+row-gap: 15px;
+grid-template-areas: ex: "nav header header" "nav none ." (o elemento precisa ter um grid-area definido);
+grid-area: ex: header (define a área no grid-template-areas);
+justify-items: distribui os elementos horizontalmente na grid (start, end, center, strech);
+align-items: distribui os elementos verticalmente na grid(start, end, center, stretch);
+justify-content: define como todo o grid será alinhado horizonalmente no container (start, end, center, strech, space-around, space-between, space-evenly);
+align-content: define como todo o grid será alinhado verticalmente no container (start, end, center, strech, space-around, space-between, space-evenly);
+justify-self: define o alinhamento horizontal do item filho dentro da célula;
+align-self: define o alinhamento vertical do item filho dentro da célula;
+
 
 Posição e transformação:
 position: tipo de posicionamento do objeto(relative, absolute, fixed, sticky);
