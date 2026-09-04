@@ -14,7 +14,7 @@ flex-flow: flex-direction e flex-wrap.
 justify-content: alinhamento dos flex items (flex-start, flex-end, center, space-between, space-around, space-evenly)
 align-items: alinhamento horizontal dos itens verticas e vice versa (flex-start, flex-end, center, stretch).
 align-content: só funciona quando tem várias linhas (flex-start, flex-end, center, stretch, space-between, space-around)
-oder: ordem de aparecimento de um flex-item;
+order: ordem de aparecimento de um flex-item;
 
 Grid CSS:
 display: grid;
